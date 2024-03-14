@@ -56,7 +56,32 @@ public class Main {
         if (surname.length() >= 3) {
             surnametail = (surname.substring(surname.length() - 3));
         } else surnametail = surname;
-        System.out.println(nametail+surnametail);
+        System.out.println(nametail + surnametail);
+        //     Sukurti kintamąjį su stringu: “An American in Paris”. Jame visas “a”
+        //    (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  Rezultatą atspausdinti.
+
+        System.out.println("======= uzd 5 =====================");
+        String frase = "An American in Paris";
+        String frase01 = frase.replace("a", "*");
+        String frase02 = frase01.replace("A", "*");
+        System.out.println(frase02);
+/// kodel man reik nauju String kintamuju? jei naudoju frase, pausdina originalu teksta
+
+
+        ///Sukurti kintamąjį su stringu: “An American in Paris”. Jame ištrinti visas balses.
+        // Rezultatą atspausdinti. Kodą pakartoti su stringais: “Breakfast at Tiffany's”,
+        // “2001:A Space Odyssey” ir “It's a Wonderful Life”.
+
+        System.out.println("======= uzd 6 =====================");
+
+
+
+
+
+
+
+
+
 
 
     }
