@@ -89,6 +89,8 @@ public class Main {
         frase = frase.replace("y", "");
 
         System.out.println(frase);
+
+
         frase = "Breakfast at Tiffany's";
         frase = frase.replace("A", "");
         frase = frase.replace("E", "");
@@ -105,6 +107,7 @@ public class Main {
 
         System.out.println(frase);
 
+
         frase = "2001:A Space Odyssey” ir “It's a Wonderful Life";
         frase = frase.replace("A", "");
         frase = frase.replace("E", "");
@@ -120,6 +123,17 @@ public class Main {
         frase = frase.replace("y", "");
 
         System.out.println(frase);
+
+      ///  Stringe, kurį generuoja toks kodas:
+        // "Star Wars: Episode "+ " ".repeat( (int) (Math.random() * 10))+((int) (Math.random() * 7)+1) + " - A New Hope"
+        // Surasti ir atspausdinti epizodo numerį.
+
+        System.out.println("======= uzd 7 =====================");
+
+        String frase1 = "Star Wars: Episode "+ " ".repeat( (int) (Math.random() * 10))+((int) (Math.random() * 7)+1) + " - A New Hope";
+        System.out.println(frase1);
+        System.out.println("epiode number: " + frase1.replaceAll("[^0-9.]", ""));
+
 
 
 
