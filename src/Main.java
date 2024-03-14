@@ -62,10 +62,9 @@ public class Main {
 
         System.out.println("======= uzd 5 =====================");
         String frase = "An American in Paris";
-         frase = frase.replace("a", "*");
-         frase = frase.replace("A", "*");
+        frase = frase.replace("a", "*");
+        frase = frase.replace("A", "*");
         System.out.println(frase);
-
 
 
         ///Sukurti kintamąjį su stringu: “An American in Paris”. Jame ištrinti visas balses.
@@ -91,17 +90,48 @@ public class Main {
 
         System.out.println(frase);
 
-      ///  Stringe, kurį generuoja toks kodas:
+        ///  Stringe, kurį generuoja toks kodas:
         // "Star Wars: Episode "+ " ".repeat( (int) (Math.random() * 10))+((int) (Math.random() * 7)+1) + " - A New Hope"
         // Surasti ir atspausdinti epizodo numerį.
 
         System.out.println("======= uzd 7 =====================");
 
-        String frase1 = "Star Wars: Episode "+ " ".repeat( (int) (Math.random() * 10))+((int) (Math.random() * 7)+1) + " - A New Hope";
+        String frase1 = "Star Wars: Episode " + " ".repeat((int) (Math.random() * 10)) + ((int) (Math.random() * 7) + 1) + " - A New Hope";
         System.out.println(frase1);
         System.out.println("epiode number: " + frase1.replaceAll("[^0-9.]", ""));
 
+        //      Suskaičiuoti kiek stringe “Don't Be a Menace to South Central While Drinking Your Juice in the Hood”
+        //      yra žodžių trumpesnių arba lygių nei 5 raidės. Pakartokite kodą su stringu
+        //      “Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale”.
 
+        System.out.println("======= uzd 8 =====================");
+
+        frase = "Don't Be a Menace to South Central While Drinking Your Juice in the Hood";
+        System.out.println(frase);
+        frase = frase.replaceAll("\\b[\\w']{6,}\\b", ""); // remove word longer than 5 letters, doessnt count '
+        //  System.out.println(frase);
+        frase = frase.replaceAll("\\s{2,}", " "); // turns all multiple space into single
+        // System.out.println(frase);
+        frase = frase.replaceAll("[^\\s]", ""); // removes all char except space
+        // System.out.println(frase);
+        int wordnum = frase.length() + 1;
+        System.out.println("There are " + wordnum + " words with 5 letters or less");
+
+        frase = "Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale";
+        System.out.println(frase);
+        frase = frase.replaceAll("\\b[\\w',\\wą,\\wų]{6,}\\b", "");
+        System.out.println(frase);
+//        frase = frase.replaceAll("\\s{2,}", " ");
+
+//        String[] words = frase.trim().split("\\s+");
+//        System.out.println("count is = " + (words.length));
+
+        frase = frase.replaceAll("\\s{2,}", " ");
+        // System.out.println(frase);
+        frase = frase.replaceAll("[^\\s]", "");
+        // System.out.println(frase);
+        wordnum = frase.length() + 1;
+        System.out.println("There are " + wordnum + " words with 5 letters or less");
 
 
     }
