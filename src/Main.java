@@ -75,52 +75,19 @@ public class Main {
         System.out.println("======= uzd 6 =====================");
 
         frase = "An American in Paris";
-        frase = frase.replace("A", "");
-        frase = frase.replace("E", "");
-        frase = frase.replace("I", "");
-        frase = frase.replace("O", "");
-        frase = frase.replace("U", "");
-        frase = frase.replace("Y", "");
-        frase = frase.replace("a", "");
-        frase = frase.replace("e", "");
-        frase = frase.replace("i", "");
-        frase = frase.replace("o", "");
-        frase = frase.replace("u", "");
-        frase = frase.replace("y", "");
+        frase = frase.replaceAll("[AEIOUaeiou]", "");
 
         System.out.println(frase);
 
 
         frase = "Breakfast at Tiffany's";
-        frase = frase.replace("A", "");
-        frase = frase.replace("E", "");
-        frase = frase.replace("I", "");
-        frase = frase.replace("O", "");
-        frase = frase.replace("U", "");
-        frase = frase.replace("Y", "");
-        frase = frase.replace("a", "");
-        frase = frase.replace("e", "");
-        frase = frase.replace("i", "");
-        frase = frase.replace("o", "");
-        frase = frase.replace("u", "");
-        frase = frase.replace("y", "");
+        frase = frase.replaceAll("[AEIOUaeiou]", "");
 
         System.out.println(frase);
 
 
         frase = "2001:A Space Odyssey” ir “It's a Wonderful Life";
-        frase = frase.replace("A", "");
-        frase = frase.replace("E", "");
-        frase = frase.replace("I", "");
-        frase = frase.replace("O", "");
-        frase = frase.replace("U", "");
-        frase = frase.replace("Y", "");
-        frase = frase.replace("a", "");
-        frase = frase.replace("e", "");
-        frase = frase.replace("i", "");
-        frase = frase.replace("o", "");
-        frase = frase.replace("u", "");
-        frase = frase.replace("y", "");
+        frase = frase.replaceAll("[AEIOUaeiou]", "");
 
         System.out.println(frase);
 
