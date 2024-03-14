@@ -62,10 +62,10 @@ public class Main {
 
         System.out.println("======= uzd 5 =====================");
         String frase = "An American in Paris";
-        String frase01 = frase.replace("a", "*");
-        String frase02 = frase01.replace("A", "*");
-        System.out.println(frase02);
-/// kodel man reik nauju String kintamuju? jei naudoju frase, pausdina originalu teksta
+         frase = frase.replace("a", "*");
+         frase = frase.replace("A", "*");
+        System.out.println(frase);
+
 
 
         ///Sukurti kintamąjį su stringu: “An American in Paris”. Jame ištrinti visas balses.
@@ -74,13 +74,52 @@ public class Main {
 
         System.out.println("======= uzd 6 =====================");
 
+        frase = "An American in Paris";
+        frase = frase.replace("A", "");
+        frase = frase.replace("E", "");
+        frase = frase.replace("I", "");
+        frase = frase.replace("O", "");
+        frase = frase.replace("U", "");
+        frase = frase.replace("Y", "");
+        frase = frase.replace("a", "");
+        frase = frase.replace("e", "");
+        frase = frase.replace("i", "");
+        frase = frase.replace("o", "");
+        frase = frase.replace("u", "");
+        frase = frase.replace("y", "");
 
+        System.out.println(frase);
+        frase = "Breakfast at Tiffany's";
+        frase = frase.replace("A", "");
+        frase = frase.replace("E", "");
+        frase = frase.replace("I", "");
+        frase = frase.replace("O", "");
+        frase = frase.replace("U", "");
+        frase = frase.replace("Y", "");
+        frase = frase.replace("a", "");
+        frase = frase.replace("e", "");
+        frase = frase.replace("i", "");
+        frase = frase.replace("o", "");
+        frase = frase.replace("u", "");
+        frase = frase.replace("y", "");
 
+        System.out.println(frase);
 
+        frase = "2001:A Space Odyssey” ir “It's a Wonderful Life";
+        frase = frase.replace("A", "");
+        frase = frase.replace("E", "");
+        frase = frase.replace("I", "");
+        frase = frase.replace("O", "");
+        frase = frase.replace("U", "");
+        frase = frase.replace("Y", "");
+        frase = frase.replace("a", "");
+        frase = frase.replace("e", "");
+        frase = frase.replace("i", "");
+        frase = frase.replace("o", "");
+        frase = frase.replace("u", "");
+        frase = frase.replace("y", "");
 
-
-
-
+        System.out.println(frase);
 
 
 
