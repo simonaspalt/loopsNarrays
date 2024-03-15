@@ -143,12 +143,15 @@ public class Main {
 
         System.out.println("======= uzd 9 =====================");
 
-        String alphabet = "abcdefghijklmnopqrsstuvwxyz";
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
         int a = (int) Math.round(Math.random() * alphabet.length());
         int b = (int) Math.round(Math.random() * alphabet.length());
         int c = (int) Math.round(Math.random() * alphabet.length());
+
         System.out.println(a + " " + b + " " +  c);
         System.out.println("" + alphabet.charAt(a) + alphabet.charAt(b) + alphabet.charAt(c) + "");
+
+
 
     }
 }
