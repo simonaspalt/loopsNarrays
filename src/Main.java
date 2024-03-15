@@ -1,4 +1,5 @@
 import java.sql.SQLOutput;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -148,8 +149,27 @@ public class Main {
         int b = (int) Math.round(Math.random() * alphabet.length());
         int c = (int) Math.round(Math.random() * alphabet.length());
 
-        System.out.println(a + " " + b + " " +  c);
+        System.out.println(a + " " + b + " " + c);
         System.out.println("" + alphabet.charAt(a) + alphabet.charAt(b) + alphabet.charAt(c) + "");
+
+        //   Parašykite kodą, kuris generuotų atsitiktinį stringą su 10 atsitiktine tvarka išdėliotų
+        //   žodžių, o žodžius generavimui imtų iš 8-me uždavinyje pateiktų dviejų stringų.
+        //   Žodžiai neturi kartotis. (reikės masyvo)
+
+        System.out.println("======= uzd 10 =====================");
+
+        frase = "Don't Be a Menace to South Central While Drinking Your Juice in the Hood Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale";
+        String[] array = frase.split(" ", 0);
+
+//final String[] proper_noun = {"Fred", "Jane", "Richard Nixon", "Miss America"};
+//Random random = new Random();
+//int index = random.nextInt(proper_noun.length);
+//System.out.println(proper_noun[index]);
+
+
+        Random random = new Random();
+        int index = random.nextInt(array.length);
+        System.out.println(array[index]);
 
 
 
