@@ -108,10 +108,14 @@ public class Main {
 
         frase = "Don't Be a Menace to South Central While Drinking Your Juice in the Hood";
         System.out.println(frase);
+        frase = frase.replaceAll("[.!?,:-]", "");
+
         frase = frase.replaceAll("\\b[\\w']{6,}\\b", ""); // remove word longer than 5 letters, doessnt count '
         //  System.out.println(frase);
         frase = frase.replaceAll("\\s{2,}", " "); // turns all multiple space into single
         // System.out.println(frase);
+        frase = frase.trim(); // remove  spaces in front and start of string
+
         frase = frase.replaceAll("[^\\s]", ""); // removes all char except space
         // System.out.println(frase);
         int wordnum = frase.length() + 1;
@@ -119,20 +123,22 @@ public class Main {
 
         frase = "Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale";
         System.out.println(frase);
-        frase = frase.replaceAll("\\b[\\w',\\wą,\\wų]{6,}\\b", "");
-        System.out.println(frase);
-//        frase = frase.replaceAll("\\s{2,}", " ");
-
-//        String[] words = frase.trim().split("\\s+");
-//        System.out.println("count is = " + (words.length));
+        frase = frase.replaceAll("[ĄČĘĖĮŠŲŪŽąčęėįšųūž]", "a");
+        frase = frase.replaceAll("[.!?,:-]", "");
+       // System.out.println(frase);
+        frase = frase.replaceAll("\\b[\\w']{6,}\\b", "");
+       // System.out.println(frase);
 
         frase = frase.replaceAll("\\s{2,}", " ");
+        frase = frase.trim();
         // System.out.println(frase);
         frase = frase.replaceAll("[^\\s]", "");
         // System.out.println(frase);
         wordnum = frase.length() + 1;
         System.out.println("There are " + wordnum + " words with 5 letters or less");
-
+// reikia revomint zodzius, pasalinti skyrybos zenklus, pakeist multi space i single,
+// taikyti skritingus skaic pagal tai ar yra space kaip pirmas ir/arba paskutinis char,
+// pasalinant viska iskyrus space
 
     }
 }
