@@ -124,10 +124,10 @@ public class Main {
         frase = "Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale";
         System.out.println(frase);
         frase = frase.replaceAll("[ĄČĘĖĮŠŲŪŽąčęėįšųūž]", "a");
-        frase = frase.replaceAll("[.!?,:-]", "");
-       // System.out.println(frase);
+        frase = frase.replaceAll("[.!?,:-]", "");// ";" --- regex?
+        // System.out.println(frase);
         frase = frase.replaceAll("\\b[\\w']{6,}\\b", "");
-       // System.out.println(frase);
+        // System.out.println(frase);
 
         frase = frase.replaceAll("\\s{2,}", " ");
         frase = frase.trim();
@@ -136,9 +136,19 @@ public class Main {
         // System.out.println(frase);
         wordnum = frase.length() + 1;
         System.out.println("There are " + wordnum + " words with 5 letters or less");
-// reikia revomint zodzius, pasalinti skyrybos zenklus, pakeist multi space i single,
-// taikyti skritingus skaic pagal tai ar yra space kaip pirmas ir/arba paskutinis char,
-// pasalinant viska iskyrus space
+
+
+        //     Parašyti kodą, kuris generuotų atsitiktinį stringą iš lotyniškų mažųjų raidžių.
+        //     Stringo ilgis 3 simboliai.
+
+        System.out.println("======= uzd 9 =====================");
+
+        String alphabet = "abcdefghijklmnopqrsstuvwxyz";
+        int a = (int) Math.round(Math.random() * alphabet.length());
+        int b = (int) Math.round(Math.random() * alphabet.length());
+        int c = (int) Math.round(Math.random() * alphabet.length());
+        System.out.println(a + " " + b + " " +  c);
+        System.out.println("" + alphabet.charAt(a) + alphabet.charAt(b) + alphabet.charAt(c) + "");
 
     }
 }
